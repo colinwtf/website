@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+@keyframes photoshow
+{
+0%{background-image:url(img/1.jpg);opacity:0}
+20%{background-image:url(img/2.jpg);opacity:0.5}
+30%{background-image:url(img/3.jpg);opacity:0.75}
+40%{background-image:url(img/4.jpg);opacity:1.0}
+50%{background-image:url(img/6.jpg);opacity:1.0}
+60%{background-image:url(img/7.jpg);opacity:1.0}
+70%{background-image:url(img/8.jpg);opacity:1.0}
+80%{background-image:url(img/9.jpg);opacity:1.0}
+90%{background-image:url(img/10.jpg);opacity:1.0}
+100%{background-image:url(img/5.jpg);opacity:1.5}
+}
+@keyframes movep
+{
+ 0%{background-image:url(img/1.jpg);
+background-position:0% 0%}
+100%{background-image:url(img/1.jpg);
+background-position:-100% 0%}
+}
+#img1{width:400px;height:300px;
+animation:photoshow 5s 1s infinite;
+background-repeat:no-repeat}
+#img2{width:400px;height:300px;
+animation:movep 1s 1s infinite;
+background-repeat:repeat}
+</style>
+</head>
+<body>
+<div id=img1></div>
+<div id=img2></div>
